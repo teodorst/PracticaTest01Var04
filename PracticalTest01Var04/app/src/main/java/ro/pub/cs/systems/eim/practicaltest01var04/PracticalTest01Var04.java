@@ -139,11 +139,13 @@ public class PracticalTest01Var04 extends AppCompatActivity {
 
     @Override
     protected void onResume() {
+        super.onResume();
         registerReceiver(startedServiceBroadcastReceiver, startedServiceIntentFilter);
     }
 
     @Override
     protected void onPause() {
+        super.onPause();
         unregisterReceiver(startedServiceBroadcastReceiver);
 
     }
