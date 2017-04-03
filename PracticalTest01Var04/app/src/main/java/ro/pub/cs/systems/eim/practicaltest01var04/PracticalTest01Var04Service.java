@@ -42,9 +42,9 @@ public class PracticalTest01Var04Service extends Service {
         Log.d(TAG, "onStartCommand() method was invoked");
         // TODO: exercise 5 - implement and start the ProcessingThread
 
-        String message_all = intent.getExtras().getString("mesaj_catre_service");
+//        String message_all = intent.getExtras().getString("mesaj_catre_service");
 
-        ProcessingThread myThread = new ProcessingThread(getApplicationContext(), message_all);
+        ProcessingThread myThread = new ProcessingThread(getApplicationContext(), "MOCKUP, MOCKUP1, MOCKUP2");
         myThread.run();
         return START_REDELIVER_INTENT;
     }

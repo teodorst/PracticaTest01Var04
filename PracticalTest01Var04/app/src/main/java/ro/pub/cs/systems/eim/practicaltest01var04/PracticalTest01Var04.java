@@ -36,7 +36,8 @@ public class PracticalTest01Var04 extends AppCompatActivity {
             if (contor > PRAG) {
                 // TODO: exercise 6 - start the service
                 Intent intent = new Intent();
-                intent.putExtra("mesaj_catre_service", buttonsEditView.getText().toString());
+                intent.putExtra("mesaj_catre_service", "MOCKUP, MOCKUP2, MOCKUP3");
+
                 intent.setComponent(new ComponentName("ro.pub.cs.systems.eim.practicaltest01var04", "ro.pub.cs.systems.eim.lab05.practicaltest01var04.practicaltest01var04service"));
 
                 startService(intent);
@@ -90,8 +91,8 @@ public class PracticalTest01Var04 extends AppCompatActivity {
             }
         });
 
-        Intent intent = new Intent(this, PracticalTest01Var04Service.class);
-        startService(intent);
+//        Intent intent = new Intent(this, PracticalTest01Var04Service.class);
+//        startService(intent);
     }
 
 
